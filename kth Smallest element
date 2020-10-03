@@ -59,3 +59,16 @@ for _ in range(T):
     
  solution 2
  
+ 
+ def kthSmallest(arr, N, K): 
+    arr.sort() 
+   
+    return arr[K-1] 
+  
+T = int(input())
+for _ in range(T): 
+    N = int(input())
+    arr = list(map(int,input().split())) 
+      
+    K = int(input())
+    print(kthSmallest(arr, N, K)) 
